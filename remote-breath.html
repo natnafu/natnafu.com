@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remote Breath — Nat Atnafu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Nat Atnafu</a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Work</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="project-page">
+    <a href="index.html" class="back-link">← Work</a>
+
+    <div class="project-header">
+      <h1 class="project-title">Remote Breath</h1>
+      <div class="project-year">2021</div>
+    </div>
+
+    <div class="project-description">
+      <p>Two devices connected online.</p>
+      <p>When one person blows on their device, the fan of the other starts to spin. This allows two people to feel the "breath" of the other no matter the distance between them — different cities, states, or countries.</p>
+    </div>
+
+    <div class="media-section">
+      <div class="media-section-label">Images</div>
+      <!-- Wide GIF (16:9-ish) gets 2/3 of the space, portrait gets 1/3 -->
+      <div class="image-gallery fixed-height" style="--cell-h: 320px; grid-template-columns: 2fr 1fr;">
+        <img src="images/remote_breath.GIF" alt="Remote Breath GIF" loading="lazy">
+        <img src="images/remote_breath-1.JPG" alt="Remote Breath device" loading="lazy">
+      </div>
+    </div>
+
+    <div class="project-nav">
+      <a href="frames.html">← Frames</a>
+      <a href="overcome.html">OVERCOME →</a>
+    </div>
+  </div>
+</main>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close">✕</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remote Touch — Nat Atnafu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Nat Atnafu</a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Work</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="project-page">
+    <a href="index.html" class="back-link">← Work</a>
+
+    <div class="project-header">
+      <h1 class="project-title">Remote Touch</h1>
+      <div class="project-year">2021</div>
+    </div>
+
+    <div class="project-description">
+      <p>Remote Touch is an art piece designed to connect people through touch no matter the distance between them.</p>
+      <p>The project consists of two frames that house a copper sheet with integrated electronics. When one person places their hand on a frame, the other frame warms up in response. Upon removing their hand, the other frame cools down.</p>
+      <p>This interaction allows participants to sense when another person is simultaneously touching a frame; feeling their warmth and sharing a moment together while apart.</p>
+    </div>
+
+    <p class="project-note">Remote Touch was chosen to be a Connection Station at the show <a href="https://www.castleofnourskins.org/" target="_blank" rel="noopener">Belonging by Castle Of Our Skins</a> on 11/5/2023.</p>
+    <p class="project-note" style="margin-top:0.4rem;">Photo Credit: Lauren Miller</p>
+
+    <div class="media-section">
+      <div class="media-section-label">Images</div>
+
+      <!-- Row 1: the two internal/device shots side by side (4:3) -->
+      <div class="image-gallery cols-2 fixed-height" style="--cell-h: 280px; margin-bottom: 1rem;">
+        <img src="images/internal_electronics.JPG" alt="Internal electronics" loading="lazy">
+        <img src="images/two_frames.JPG" alt="Two frames" loading="lazy">
+      </div>
+
+      <!-- Row 2–3: exhibition shots (3:2) in a 3-col grid -->
+      <div class="image-gallery cols-3 fixed-height" style="--cell-h: 240px;">
+        <img src="images/CastleofourSkinsBelonging_LaurenMiller-10.jpg" alt="Belonging show — Lauren Miller" loading="lazy">
+        <img src="images/CastleofourSkinsBelonging_LaurenMiller-070.jpg" alt="Belonging show — Lauren Miller" loading="lazy">
+        <img src="images/CastleofourSkinsBelonging_LaurenMiller-66.jpg" alt="Belonging show — Lauren Miller" loading="lazy">
+      </div>
+    </div>
+
+    <div class="project-nav">
+      <a href="waves.html">← Waves</a>
+      <a href="led-dome.html">Mindshark LED Dome →</a>
+    </div>
+  </div>
+</main>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close">✕</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
