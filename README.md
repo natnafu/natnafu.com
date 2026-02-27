@@ -19,7 +19,7 @@ natnafu-site/
 ├── acrylic-pour.html
 ├── style.css
 ├── main.js
-└── images/              ← Put your downloaded images here
+└── content/              ← Put your downloaded images here
 ```
 
 ## Hosting Options
@@ -48,13 +48,13 @@ those image URLs will break.
 **Before canceling Squarespace:**
 1. SiteSucker should have already downloaded your images — find them in the
    SiteSucker output folder (look for the `images.squarespace-cdn.com` subfolder)
-2. Copy all your images into the `images/` folder in this site
-3. Update the `src` attributes in each HTML file to point to `images/your-file.jpg`
+2. Copy all your images into the `content/` folder in this site
+3. Update the `src` attributes in each HTML file to point to `content/your-file.jpg`
    instead of the long Squarespace CDN URL
 
 You can do a find-and-replace in any text editor:
 - Find: `https://images.squarespace-cdn.com/content/v1/5dec15adeb7f6827970877dc/`
-- Replace with: `images/` (then rename files to match)
+- Replace with: `content/` (then rename files to match)
 
 ## Videos
 
