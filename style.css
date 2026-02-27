@@ -403,6 +403,12 @@ main {
   padding: 3rem 2.5rem 6rem;
 }
 
+.about-heading {
+  font-size: 1.5rem;
+  letter-spacing: 0.06em;
+  margin-bottom: 1.5rem;
+}
+
 .about-photo {
   width: 200px;
   height: 200px;

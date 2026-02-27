@@ -18,35 +18,39 @@
 
 <main>
   <div class="project-page">
-    <a href="index.html" class="back-link">← Work</a>
-
-    <div class="project-header">
+    <div class="project-header project-header--centered">
       <h1 class="project-title">Waves</h1>
       <div class="project-year">2025</div>
+      <div class="project-subtitle">
+        <p>Waves is an interactive piece that illustrates the RGB color model—an additive system where red, green, and blue combine to create a wide range of colors.</p>
+        <p>It does this by generating independent red, green, and blue sine waves; each having their own power, length, and speed. By changing these parameters, the viewer can control how the 3 waves intersect at different intensities to produce an array of colors.</p>
+        <p>Waves explores how combining simple elements can produce complex results. What begins as three predictable patterns transforms into an intricate landscape of shifting colors. The work reflects how beauty emerges when the simplest forces meet, reminding us that complexity is often born from what is most elemental.</p>
+      </div>
+      <p class="project-notice"><em>Waves was on display at <a href="https://www.newalliance.gallery/" target="_blank" rel="noopener">New Alliance Gallery's Synth-tember 2025</a> show from 9/12/25–11/14/25.</em></p>
     </div>
 
-    <div class="project-description">
-      <p>Waves is an interactive piece that illustrates the RGB color model—an additive system where red, green, and blue combine to create a wide range of colors.</p>
-      <p>It does this by generating independent red, green, and blue sine waves; each having their own power, length, and speed. By changing these parameters, the viewer can control how the 3 waves intersect at different intensities to produce an array of colors.</p>
-      <p>Waves explores how combining simple elements can produce complex results. What begins as three predictable patterns transforms into an intricate landscape of shifting colors. The work reflects how beauty emerges when the simplest forces meet, reminding us that complexity is often born from what is most elemental.</p>
+    <hr class="section-divider">
+
+    <div class="project-two-col">
+      <div class="project-two-col-text">
+        <p><strong>Interactive Controls</strong></p>
+        <p>Each <strong>column</strong> controls a single color. Each <strong>row</strong> controls a wave property:</p>
+        <table class="spec-table">
+          <tr><th>Property</th><th>Description</th></tr>
+          <tr><td>SPEED</td><td>Controls how fast the wave travels</td></tr>
+          <tr><td>LENGTH</td><td>Controls how long the wave is</td></tr>
+          <tr><td>POWER</td><td>Controls how bright the wave is</td></tr>
+        </table>
+      </div>
+      <div class="project-two-col-image">
+        <img src="images/control.png" alt="Waves control panel">
+      </div>
     </div>
 
-    <p class="project-note">Waves was on display at <a href="https://www.newalliance.gallery/" target="_blank" rel="noopener">New Alliance Gallery's Synth-tember 2025</a> show from 9/12/25–11/14/25.</p>
-
-    <div class="media-section" style="margin-top:2rem; margin-bottom:2rem; background:#111; padding:1.5rem; font-family:var(--font-mono); font-size:0.8rem; color:#aaa;">
-      <div class="media-section-label" style="color:#555;">Interactive Controls</div>
-      <p style="margin-bottom:1rem;">Each <strong style="color:#fff;">column</strong> controls a single color. Each <strong style="color:#fff;">row</strong> controls a wave property:</p>
-      <table class="spec-table" style="color:#ccc;">
-        <tr><th style="color:#666;">Property</th><th style="color:#666;">Description</th></tr>
-        <tr><td>SPEED</td><td>Controls how fast the wave travels</td></tr>
-        <tr><td>LENGTH</td><td>Controls how long the wave is</td></tr>
-        <tr><td>POWER</td><td>Controls how bright the wave is</td></tr>
-      </table>
-    </div>
+    <hr class="section-divider">
 
     <div class="media-section">
       <div class="media-section-label">Prototype</div>
-      <p style="font-size:0.85rem; color:var(--gray); font-family:var(--font-mono); margin-bottom:1rem;">Videos were hosted on Squarespace's private CDN and cannot be accessed directly. Download them from your Squarespace account before canceling, then place them in your <code>images/</code> folder and uncomment the video tags below.</p>
 
       <div class="image-gallery cols-2">
         <!-- Vertical prototype video (trimmed.mov — aspect ratio 0.5625, ~30s) -->
