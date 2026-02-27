@@ -50,51 +50,34 @@
     <hr class="section-divider">
 
     <div class="media-section">
-      <div class="media-section-label">Prototype</div>
+      <div class="media-section-label">VIDEOS</div>
 
-      <div class="image-gallery cols-2">
-        <!-- Vertical prototype video (trimmed.mov — aspect ratio 0.5625, ~30s) -->
-        <div class="video-placeholder" style="background:#111; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#555; font-family:var(--font-mono); font-size:0.75rem; text-align:center; min-height:180px; padding:1rem;">
-          <div style="font-size:2rem; margin-bottom:0.5rem;">▶</div>
-          <div>trimmed.mov</div>
-          <div style="margin-top:0.5rem; font-size:0.65rem; color:#444;">Replace with:<br><code style="color:#666;">images/trimmed.mp4</code></div>
-          <!-- Uncomment when you have the file:
-          <video src="images/trimmed.mp4" controls playsinline muted autoplay loop style="width:100%;height:100%;object-fit:contain;"></video>
-          -->
-        </div>
-
-        <!-- Landscape demo video (waves_demo_vid_silent.mp4 — 16:9, ~106s) -->
-        <div class="video-placeholder" style="background:#111; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#555; font-family:var(--font-mono); font-size:0.75rem; text-align:center; min-height:180px; padding:1rem;">
-          <div style="font-size:2rem; margin-bottom:0.5rem;">▶</div>
-          <div>waves_demo_vid_silent.mp4</div>
-          <div style="margin-top:0.5rem; font-size:0.65rem; color:#444;">Replace with:<br><code style="color:#666;">images/waves_demo_vid_silent.mp4</code></div>
-          <!-- Uncomment when you have the file:
-          <video src="images/waves_demo_vid_silent.mp4" controls playsinline style="width:100%;height:100%;object-fit:contain;"></video>
-          -->
-        </div>
+      <div style="position:relative; padding-bottom:177.78%; background:#111;">
+        <video src="images/trimmed.mov" controls playsinline muted autoplay loop style="position:absolute; inset:0; width:100%; height:100%; object-fit:contain;"></video>
       </div>
     </div>
 
     <div class="media-section">
       <div class="media-section-label">Images</div>
 
-      <!-- Row 1: square control panel full-width, two portrait shots side by side -->
-      <div class="image-gallery cols-3 fixed-height" style="--cell-h: 320px; margin-bottom: 1rem;">
+      <div class="image-gallery cols-3 fixed-height" style="--cell-h: 300px; margin-bottom: 1rem;">
         <img src="images/control.png" alt="Waves control panel" loading="lazy">
-        <img src="images/IMG_9500.JPG" alt="Waves installation" loading="lazy">
         <img src="images/IMG_9366.JPG" alt="Waves installation" loading="lazy">
-      </div>
-
-      <!-- Row 2: three portrait shots -->
-      <div class="image-gallery cols-3 fixed-height" style="--cell-h: 320px; margin-bottom: 1rem;">
         <img src="images/IMG_9499.JPG" alt="Waves installation" loading="lazy">
+      </div>
+      <div class="image-gallery cols-3 fixed-height" style="--cell-h: 300px;">
         <img src="images/IMG_0262.JPG" alt="Waves installation" loading="lazy">
         <img src="images/IMG_0272.JPG" alt="Waves installation" loading="lazy">
-      </div>
-
-      <!-- Row 3: portrait + landscape side by side, landscape gets 2x width -->
-      <div class="image-gallery fixed-height" style="--cell-h: 340px; grid-template-columns: 1fr 2fr;">
         <img src="images/IMG_9501.JPG" alt="Waves installation" loading="lazy">
+      </div>
+    </div>
+
+    <div class="media-section">
+      <div class="media-section-label">Prototype</div>
+      <div class="image-gallery cols-2" style="align-items:start;">
+        <div style="position:relative; padding-bottom:56.25%; background:#111;">
+          <video src="images/waves_demo_vid.mp4" controls playsinline style="position:absolute; inset:0; width:100%; height:100%; object-fit:contain;"></video>
+        </div>
         <img src="images/waves_control_board.JPG" alt="Waves control board" loading="lazy">
       </div>
     </div>
