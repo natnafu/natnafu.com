@@ -18,48 +18,57 @@
 
 <main>
   <div class="project-page">
-    <a href="index.html" class="back-link">← Work</a>
 
-    <div class="project-header">
+    <div class="project-header project-header--centered">
       <h1 class="project-title">The Fans of Life</h1>
       <div class="project-year">2020</div>
+      <div class="project-subtitle">
+        <p>Interactive grid of fans playing out Conway's Game of Life.</p>
+        <p>(See how it works <a href="#videos">here</a>)</p>
+      </div>
+      <p class="project-notice">
+        <em>The Fans of Life was on display at <a href="https://www.newalliance.gallery/" target="_blank" rel="noopener">New Alliance Gallery's Synth-tember 2024</a> show from 9/20/24 - 11/15/24.</em>
+      </p>
     </div>
 
-    <div class="project-description">
-      <p>Interactive grid of fans playing out Conway's Game of Life.</p>
-      <p>Using 256 fans, controlled by custom circuit boards and software, The Fans of Life plays out Conway's Game of Life. The viewer is able to edit the current state by spinning or stopping any fan, affecting how the game plays out. The piece illustrates how simple rules can lead to complex and far-reaching outcomes and invites viewers to witness and participate in the spontaneous emergence of intricate patterns.</p>
-      <p>Just as simple rules of 1s and 0s have created technological marvels and basic biological principles gave rise to the diversity of life, The Fans of Life demonstrates the profound impact of simple interactions. By allowing the viewer to modify the grid it shows how individual actions can influence the outcome and cause significant change, mirroring the interconnectedness found in life all around us.</p>
+    <hr class="section-divider">
+
+    <div class="project-two-col">
+      <div class="project-two-col-image">
+        <img src="images/fans_of_life.gif" alt="The Fans of Life — animated grid">
+      </div>
+      <div class="project-two-col-text">
+        <p>Using 256 fans, controlled by custom circuit boards and software, The Fans of Life plays out Conway's Game of Life. The viewer is able to edit the current state by spinning or stopping any fan, affecting how the game plays out. The piece illustrates how simple rules can lead to complex and far-reaching outcomes and invites viewers to witness and participate in the spontaneous emergence of intricate patterns.</p>
+        <p>Just as simple rules of 1s and 0s have created technological marvels and basic biological principles gave rise to the diversity of life, The Fans of Life demonstrates the profound impact of simple interactions. By allowing the viewer to modify the grid it shows how individual actions can influence the outcome and cause significant change, mirroring the interconnectedness found in life all around us.</p>
+        <p><strong>Explanation of the Game of Life</strong></p>
+        <p>The Game of Life is a cellular automaton devised by John Horton Conway in 1970.</p>
+        <p>Cells can either be dead or alive and their next state depends on the following rules:</p>
+        <ol>
+          <li>Any live fan with fewer than two live neighbors dies (underpopulation).</li>
+          <li>Any live fan with two or three live neighbors lives on to the next generation.</li>
+          <li>Any live fan with more than three live neighbors dies (overpopulation).</li>
+          <li>Any dead fan with exactly three live neighbors becomes a live fan (reproduction).</li>
+        </ol>
+      </div>
     </div>
 
-    <p class="project-note">The Fans of Life was on display at <a href="https://www.newalliance.gallery/" target="_blank" rel="noopener">New Alliance Gallery's Synth-tember 2024</a> show from 9/20/24–11/15/24.</p>
+    <hr class="section-divider">
 
-    <div class="media-section" style="margin-top:2rem; background:var(--light-gray); padding:1.5rem;">
-      <div class="media-section-label">About Conway's Game of Life</div>
-      <p style="font-size:0.9rem; line-height:1.7; margin-bottom:1rem;">The Game of Life is a cellular automaton devised by John Horton Conway in 1970. Cells can either be dead or alive and their next state depends on the following rules:</p>
-      <ul style="font-size:0.85rem; font-family:var(--font-mono); line-height:2; padding-left:1.2rem;">
-        <li>Any live fan with fewer than two live neighbors dies (underpopulation).</li>
-        <li>Any live fan with two or three live neighbors lives on to the next generation.</li>
-        <li>Any live fan with more than three live neighbors dies (overpopulation).</li>
-        <li>Any dead fan with exactly three live neighbors becomes a live fan (reproduction).</li>
-      </ul>
-    </div>
-
-    <div class="media-section">
+    <div class="media-section" id="videos">
       <div class="media-section-label">Videos</div>
-      <p style="font-size:0.85rem; color:var(--gray); font-family:var(--font-mono); margin-bottom:1rem;">Videos were hosted on Squarespace's private CDN. Download from your Squarespace account, place in <code>images/</code>, then uncomment the video tags.</p>
       <div class="image-gallery cols-2">
 
-        <div class="video-placeholder" style="background:#111; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#555; font-family:var(--font-mono); font-size:0.7rem; text-align:center; min-height:180px; padding:1rem;">
+        <div class="video-placeholder" style="background:#111; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#555; font-family:var(--font-mono); font-size:0.7rem; text-align:center; min-height:200px; padding:1rem;">
           <div style="font-size:1.5rem; margin-bottom:0.4rem;">▶</div><div>FoL_mute_crop.mov</div>
           <!-- <video src="images/FoL_mute_crop.mp4" controls playsinline muted autoplay loop style="width:100%;height:100%;object-fit:contain;"></video> -->
         </div>
 
-        <div class="video-placeholder" style="background:#111; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#555; font-family:var(--font-mono); font-size:0.7rem; text-align:center; min-height:180px; padding:1rem;">
+        <div class="video-placeholder" style="background:#111; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#555; font-family:var(--font-mono); font-size:0.7rem; text-align:center; min-height:200px; padding:1rem;">
           <div style="font-size:1.5rem; margin-bottom:0.4rem;">▶</div><div>Untitled.mov</div>
           <!-- <video src="images/Untitled.mp4" controls playsinline style="width:100%;height:100%;object-fit:contain;"></video> -->
         </div>
 
-        <div class="video-placeholder" style="background:#111; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#555; font-family:var(--font-mono); font-size:0.7rem; text-align:center; padding:1rem; grid-column: span 2;">
+        <div class="video-placeholder" style="background:#111; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#555; font-family:var(--font-mono); font-size:0.7rem; text-align:center; padding:1rem; grid-column: span 2; min-height:200px;">
           <div style="font-size:1.5rem; margin-bottom:0.4rem;">▶</div><div>the_fans_of_life (720p).mp4</div>
           <!-- <video src="images/the_fans_of_life_720p.mp4" controls playsinline style="width:100%;height:100%;object-fit:contain;"></video> -->
         </div>
@@ -69,15 +78,12 @@
 
     <div class="media-section">
       <div class="media-section-label">Images</div>
-
-      <!-- 6 portrait shots in 3-col grid -->
       <div class="image-gallery cols-3 fixed-height" style="--cell-h: 320px; margin-bottom: 1rem;">
         <img src="images/IMG_8145.JPG" alt="Fans of Life" loading="lazy">
         <img src="images/IMG_8135.JPG" alt="Fans of Life" loading="lazy">
         <img src="images/IMG_8129.JPG" alt="Fans of Life" loading="lazy">
         <img src="images/IMG_8130.JPG" alt="Fans of Life" loading="lazy">
         <img src="images/IMG_1918.jpeg" alt="Fans of Life" loading="lazy">
-        <!-- near-square IMG_7393 fills the last portrait cell cleanly -->
         <img src="images/IMG_7393.jpeg" alt="Fans of Life" loading="lazy">
       </div>
     </div>
@@ -86,6 +92,7 @@
       <a href="led-dome.html">← Mindshark LED Dome</a>
       <a href="frames.html">Frames →</a>
     </div>
+
   </div>
 </main>
 
