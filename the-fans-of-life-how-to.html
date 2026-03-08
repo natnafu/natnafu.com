@@ -1,218 +1,275 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Fans of Life (How To) — Nat Atnafu</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    .howto-section {
-      margin-top: 2rem;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Fans of Life (How To) — Nat Atnafu</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .howto-section {
+        margin-top: 2rem;
+      }
 
-    .howto-section p {
-      font-size: 0.95rem;
-      line-height: 1.8;
-      margin-bottom: 0.75rem;
-    }
+      .howto-section p {
+        font-size: 0.95rem;
+        line-height: 1.8;
+        margin-bottom: 0.75rem;
+      }
 
-    .howto-warning {
-      font-weight: 500;
-      color: var(--black);
-    }
+      .howto-warning {
+        font-weight: 500;
+        color: var(--black);
+      }
 
-    .howto-rules {
-      font-size: 0.95rem;
-      line-height: 1.8;
-    }
+      .howto-rules {
+        font-size: 0.95rem;
+        line-height: 1.8;
+      }
 
-    .howto-rules li {
-      margin-bottom: 0.4rem;
-    }
+      .howto-rules li {
+        margin-bottom: 0.4rem;
+      }
 
-    .howto-gif {
-      width: 100%;
-      max-width: 360px;
-      display: block;
-      margin: 1.5rem auto;
-    }
+      .howto-gif {
+        width: 100%;
+        max-width: 360px;
+        display: block;
+        margin: 1.5rem auto;
+      }
 
-    /* Pattern grid */
-    .pattern-category {
-      margin-top: 2.5rem;
-    }
+      /* Pattern grid */
+      .pattern-category {
+        margin-top: 2.5rem;
+      }
 
-    .pattern-category-label {
-      font-family: var(--font-mono);
-      font-size: 0.7rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--gray);
-      margin-bottom: 1rem;
-    }
+      .pattern-category-label {
+        font-family: var(--font-mono);
+        font-size: 0.7rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--gray);
+        margin-bottom: 1rem;
+      }
 
-    .pattern-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      align-items: flex-end;
-    }
+      .pattern-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        align-items: flex-end;
+      }
 
-    .pattern-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.5rem;
-    }
+      .pattern-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+      }
 
-    .pattern-item img {
-      display: block;
-      image-rendering: pixelated;
-      height: 80px;
-      width: auto;
-    }
+      .pattern-item img {
+        display: block;
+        image-rendering: pixelated;
+        height: 80px;
+        width: auto;
+      }
 
-    .pattern-item-name {
-      font-family: var(--font-mono);
-      font-size: 0.7rem;
-      letter-spacing: 0.06em;
-      color: var(--gray);
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-
-<nav>
-  <a href="index.html" class="nav-logo">Nat Atnafu</a>
-  <ul class="nav-links">
-    <li><a href="index.html" class="active">Work</a></li>
-    <li><a href="about.html">About</a></li>
-  </ul>
-</nav>
-
-<main>
-  <div class="project-page">
-
-    <div class="project-header project-header--centered">
-      <h1 class="project-title">The Fans of Life — How to Interact</h1>
-    </div>
-
-    <hr class="section-divider">
-
-    <div class="howto-section">
-      <p>To start a fan, spin it with your finger.</p>
-      <p>To stop a fan, stop it with your finger.</p>
-      <p>Watch the fans change as they play out the Game of Life.</p>
-
-      <img
-        class="howto-gif"
-        src="content/the-fans-of-life-how-to/fol.gif"
-        alt="Demonstration of spinning and stopping fans"
-      >
-    </div>
-
-    <hr class="section-divider">
-
-    <div class="howto-section">
-      <p>Each fan has two states: alive or dead (on or off).</p>
-      <p>Every 2 seconds, the fans change state based on the following rules:</p>
-      <ul class="howto-rules" style="padding-left: 1.5rem; margin-top: 0.5rem;">
-        <li>A live fan survives if it has 2–3 living neighbors and dies otherwise.</li>
-        <li>A dead fan comes to life if it has 3 living neighbors.</li>
+      .pattern-item-name {
+        font-family: var(--font-mono);
+        font-size: 0.7rem;
+        letter-spacing: 0.06em;
+        color: var(--gray);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="nav-logo">Nat Atnafu</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Work</a></li>
+        <li><a href="about.html">About</a></li>
       </ul>
-      <p style="margin-top: 0.75rem;">Changing a fan with your finger will reset the 2 second timer, allowing you to edit multiple fans before the next change.</p>
-      <p>These simple rules can create extremely complex patterns.</p>
-      <p><strong>Life is unpredictable, so once in a while a random fan will turn on!</strong></p>
-    </div>
+    </nav>
 
-    <hr class="section-divider">
+    <main>
+      <div class="project-page">
+        <div class="project-header project-header--centered">
+          <h1 class="project-title">The Fans of Life — How to Interact</h1>
+        </div>
 
-    <div class="media-section">
-      <div class="media-section-label">Example Patterns</div>
+        <hr class="section-divider" />
 
-      <div class="pattern-category">
-        <div class="pattern-category-label">Still Lifes (Never Change)</div>
-        <div class="pattern-grid">
-          <div class="pattern-item">
-            <img src="content/the-fans-of-life-how-to/Game_of_life_block_with_border.svg" alt="Block">
-            <span class="pattern-item-name">Block</span>
+        <div class="howto-section">
+          <p>To start a fan, spin it with your finger.</p>
+          <p>To stop a fan, stop it with your finger.</p>
+          <p>Watch the fans change as they play out the Game of Life.</p>
+
+          <img
+            class="howto-gif"
+            src="content/the-fans-of-life-how-to/fol.gif"
+            alt="Demonstration of spinning and stopping fans"
+          />
+        </div>
+
+        <hr class="section-divider" />
+
+        <div class="howto-section">
+          <p>Each fan has two states: alive or dead (on or off).</p>
+          <p>
+            Every 2 seconds, the fans change state based on the following rules:
+          </p>
+          <ul
+            class="howto-rules"
+            style="padding-left: 1.5rem; margin-top: 0.5rem"
+          >
+            <li>
+              A live fan survives if it has 2–3 living neighbors and dies
+              otherwise.
+            </li>
+            <li>A dead fan comes to life if it has 3 living neighbors.</li>
+          </ul>
+          <p style="margin-top: 0.75rem">
+            Changing a fan with your finger will reset the 2 second timer,
+            allowing you to edit multiple fans before the next change.
+          </p>
+          <p>These simple rules can create extremely complex patterns.</p>
+          <p>
+            <strong
+              >Life is unpredictable, so once in a while a random fan will turn
+              on!</strong
+            >
+          </p>
+        </div>
+
+        <hr class="section-divider" />
+
+        <div class="media-section">
+          <div class="media-section-label">Example Patterns</div>
+
+          <div class="pattern-category">
+            <div class="pattern-category-label">Still Lifes (Never Change)</div>
+            <div class="pattern-grid">
+              <div class="pattern-item">
+                <img
+                  src="content/the-fans-of-life-how-to/Game_of_life_block_with_border.svg"
+                  alt="Block"
+                />
+                <span class="pattern-item-name">Block</span>
+              </div>
+              <div class="pattern-item">
+                <img
+                  src="content/the-fans-of-life-how-to/Game_of_life_beehive.svg"
+                  alt="Beehive"
+                />
+                <span class="pattern-item-name">Beehive</span>
+              </div>
+              <div class="pattern-item">
+                <img
+                  src="content/the-fans-of-life-how-to/Game_of_life_loaf.svg"
+                  alt="Loaf"
+                />
+                <span class="pattern-item-name">Loaf</span>
+              </div>
+              <div class="pattern-item">
+                <img
+                  src="content/the-fans-of-life-how-to/Game_of_life_boat.svg"
+                  alt="Boat"
+                />
+                <span class="pattern-item-name">Boat</span>
+              </div>
+              <div class="pattern-item">
+                <img
+                  src="content/the-fans-of-life-how-to/Game_of_life_flower.svg"
+                  alt="Tub"
+                />
+                <span class="pattern-item-name">Tub</span>
+              </div>
+            </div>
           </div>
-          <div class="pattern-item">
-            <img src="content/the-fans-of-life-how-to/Game_of_life_beehive.svg" alt="Beehive">
-            <span class="pattern-item-name">Beehive</span>
+
+          <div class="pattern-category">
+            <div class="pattern-category-label">Oscillators</div>
+            <div class="pattern-grid">
+              <div class="pattern-item">
+                <img
+                  src="content/the-fans-of-life-how-to/Game_of_life_blinker.gif"
+                  alt="Blinker"
+                />
+                <span class="pattern-item-name">Blinker (period 2)</span>
+              </div>
+              <div class="pattern-item">
+                <img
+                  src="content/the-fans-of-life-how-to/Game_of_life_toad.gif"
+                  alt="Toad"
+                />
+                <span class="pattern-item-name">Toad (period 2)</span>
+              </div>
+              <div class="pattern-item">
+                <img
+                  src="content/the-fans-of-life-how-to/Game_of_life_beacon.gif"
+                  alt="Beacon"
+                />
+                <span class="pattern-item-name">Beacon (period 2)</span>
+              </div>
+              <div class="pattern-item">
+                <img
+                  src="content/the-fans-of-life-how-to/Game_of_life_pulsar.gif"
+                  alt="Pulsar"
+                />
+                <span class="pattern-item-name">Pulsar (period 3)</span>
+              </div>
+              <div class="pattern-item">
+                <img
+                  src="content/the-fans-of-life-how-to/I-Column.gif"
+                  alt="Pentadecathlon"
+                />
+                <span class="pattern-item-name"
+                  >Pentadecathlon (period 15)</span
+                >
+              </div>
+            </div>
           </div>
-          <div class="pattern-item">
-            <img src="content/the-fans-of-life-how-to/Game_of_life_loaf.svg" alt="Loaf">
-            <span class="pattern-item-name">Loaf</span>
-          </div>
-          <div class="pattern-item">
-            <img src="content/the-fans-of-life-how-to/Game_of_life_boat.svg" alt="Boat">
-            <span class="pattern-item-name">Boat</span>
-          </div>
-          <div class="pattern-item">
-            <img src="content/the-fans-of-life-how-to/Game_of_life_flower.svg" alt="Tub">
-            <span class="pattern-item-name">Tub</span>
+
+          <div class="pattern-category">
+            <div class="pattern-category-label">Spaceships (Moving)</div>
+            <div class="pattern-grid">
+              <div class="pattern-item">
+                <img
+                  src="content/the-fans-of-life-how-to/Gospers_glider_gun.gif"
+                  alt="Glider"
+                />
+                <span class="pattern-item-name">Glider</span>
+              </div>
+              <div class="pattern-item">
+                <img
+                  src="content/the-fans-of-life-how-to/Game_of_life_animated_LWSS.gif"
+                  alt="Lightweight Spaceship"
+                />
+                <span class="pattern-item-name">Lightweight spaceship</span>
+              </div>
+              <div class="pattern-item">
+                <img
+                  src="content/the-fans-of-life-how-to/Animated_Mwss.gif"
+                  alt="Middleweight Spaceship"
+                />
+                <span class="pattern-item-name">Middleweight spaceship</span>
+              </div>
+              <div class="pattern-item">
+                <img
+                  src="content/the-fans-of-life-how-to/Animated_Hwss.gif"
+                  alt="Heavyweight Spaceship"
+                />
+                <span class="pattern-item-name">Heavyweight spaceship</span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="pattern-category">
-        <div class="pattern-category-label">Oscillators</div>
-        <div class="pattern-grid">
-          <div class="pattern-item">
-            <img src="content/the-fans-of-life-how-to/Game_of_life_blinker.gif" alt="Blinker">
-            <span class="pattern-item-name">Blinker (period 2)</span>
-          </div>
-          <div class="pattern-item">
-            <img src="content/the-fans-of-life-how-to/Game_of_life_toad.gif" alt="Toad">
-            <span class="pattern-item-name">Toad (period 2)</span>
-          </div>
-          <div class="pattern-item">
-            <img src="content/the-fans-of-life-how-to/Game_of_life_beacon.gif" alt="Beacon">
-            <span class="pattern-item-name">Beacon (period 2)</span>
-          </div>
-          <div class="pattern-item">
-            <img src="content/the-fans-of-life-how-to/Game_of_life_pulsar.gif" alt="Pulsar">
-            <span class="pattern-item-name">Pulsar (period 3)</span>
-          </div>
-          <div class="pattern-item">
-            <img src="content/the-fans-of-life-how-to/I-Column.gif" alt="Pentadecathlon">
-            <span class="pattern-item-name">Pentadecathlon (period 15)</span>
-          </div>
+        <div class="project-nav">
+          <a href="the-fans-of-life.html">← The Fans of Life</a>
         </div>
       </div>
+    </main>
 
-      <div class="pattern-category">
-        <div class="pattern-category-label">Spaceships (Moving)</div>
-        <div class="pattern-grid">
-          <div class="pattern-item">
-            <img src="content/the-fans-of-life-how-to/Gospers_glider_gun.gif" alt="Glider">
-            <span class="pattern-item-name">Glider</span>
-          </div>
-          <div class="pattern-item">
-            <img src="content/the-fans-of-life-how-to/Game_of_life_animated_LWSS.gif" alt="Lightweight Spaceship">
-            <span class="pattern-item-name">Lightweight spaceship</span>
-          </div>
-          <div class="pattern-item">
-            <img src="content/the-fans-of-life-how-to/Animated_Mwss.gif" alt="Middleweight Spaceship">
-            <span class="pattern-item-name">Middleweight spaceship</span>
-          </div>
-          <div class="pattern-item">
-            <img src="content/the-fans-of-life-how-to/Animated_Hwss.gif" alt="Heavyweight Spaceship">
-            <span class="pattern-item-name">Heavyweight spaceship</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-nav">
-      <a href="the-fans-of-life.html">← The Fans of Life</a>
-    </div>
-
-  </div>
-</main>
-
-<script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>

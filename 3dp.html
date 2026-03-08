@@ -1,63 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>3DP — Nat Atnafu</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3DP — Nat Atnafu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="nav-logo">Nat Atnafu</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Work</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
 
-<nav>
-  <a href="index.html" class="nav-logo">Nat Atnafu</a>
-  <ul class="nav-links">
-    <li><a href="index.html" class="active">Work</a></li>
-    <li><a href="about.html">About</a></li>
-  </ul>
-</nav>
+    <main>
+      <div class="project-page">
+        <div class="project-header project-header--centered">
+          <h1 class="project-title">3DP</h1>
+          <div class="project-subtitle" style="margin-top: 0.5rem">
+            <p>Miscellaneous 3D printed pieces.</p>
+          </div>
+        </div>
 
-<main>
-  <div class="project-page">
-    <div class="project-header project-header--centered">
-      <h1 class="project-title">3DP</h1>
-      <div class="project-subtitle" style="margin-top:0.5rem;">
-        <p>Miscellaneous 3D printed pieces.</p>
+        <hr class="section-divider" />
+
+        <div class="media-section">
+          <div
+            class="image-gallery cols-3 fixed-height"
+            style="--cell-h: 300px; margin-bottom: 1rem"
+          >
+            <img src="content/3dp/IMG_5456.JPG" alt="3D print" loading="lazy" />
+            <img src="content/3dp/IMG_5455.JPG" alt="3D print" loading="lazy" />
+            <img src="content/3dp/IMG_5901.JPG" alt="3D print" loading="lazy" />
+          </div>
+
+          <!-- Wide landscape (1.62:1) gets its own full-width row so it isn't forced into a portrait cell -->
+          <div
+            class="image-gallery cols-1 fixed-height"
+            style="--cell-h: 340px; margin-bottom: 1rem"
+          >
+            <img src="content/3dp/IMG_7853.jpg" alt="3D print" loading="lazy" />
+          </div>
+
+          <div
+            class="image-gallery cols-3 fixed-height"
+            style="--cell-h: 300px"
+          >
+            <img src="content/3dp/IMG_6702.jpg" alt="3D print" loading="lazy" />
+            <img src="content/3dp/IMG_6703.jpg" alt="3D print" loading="lazy" />
+            <img src="content/3dp/IMG_7854.JPG" alt="3D print" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="project-nav">
+          <a href="overcome.html">← OVERCOME</a>
+          <a href="acrylic-pour.html">Acrylic Pour →</a>
+        </div>
       </div>
+    </main>
+
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close">✕</button>
+      <img id="lightbox-img" src="" alt="" />
     </div>
 
-    <hr class="section-divider">
-
-    <div class="media-section">
-      <div class="image-gallery cols-3 fixed-height" style="--cell-h: 300px; margin-bottom: 1rem;">
-        <img src="content/3dp/IMG_5456.JPG" alt="3D print" loading="lazy">
-        <img src="content/3dp/IMG_5455.JPG" alt="3D print" loading="lazy">
-        <img src="content/3dp/IMG_5901.JPG" alt="3D print" loading="lazy">
-      </div>
-
-      <!-- Wide landscape (1.62:1) gets its own full-width row so it isn't forced into a portrait cell -->
-      <div class="image-gallery cols-1 fixed-height" style="--cell-h: 340px; margin-bottom: 1rem;">
-        <img src="content/3dp/IMG_7853.jpg" alt="3D print" loading="lazy">
-      </div>
-
-      <div class="image-gallery cols-3 fixed-height" style="--cell-h: 300px;">
-        <img src="content/3dp/IMG_6702.jpg" alt="3D print" loading="lazy">
-        <img src="content/3dp/IMG_6703.jpg" alt="3D print" loading="lazy">
-        <img src="content/3dp/IMG_7854.JPG" alt="3D print" loading="lazy">
-      </div>
-    </div>
-
-    <div class="project-nav">
-      <a href="overcome.html">← OVERCOME</a>
-      <a href="acrylic-pour.html">Acrylic Pour →</a>
-    </div>
-  </div>
-</main>
-
-<div class="lightbox" id="lightbox">
-  <button class="lightbox-close">✕</button>
-  <img id="lightbox-img" src="" alt="">
-</div>
-
-<script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
