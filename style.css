@@ -55,13 +55,26 @@ nav.scrolled {
 }
 
 .nav-logo {
+  color: var(--black);
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nav-logo-img {
+  height: 3rem;
+  width: 3rem;
+  object-fit: contain;
+}
+
+.nav-logo-text {
   font-family: var(--font-mono);
   font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--black);
-  text-decoration: none;
   display: flex;
   flex-direction: column;
   line-height: 1.1;
