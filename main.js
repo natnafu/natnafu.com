@@ -6,6 +6,17 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// Keep main content below the fixed nav
+function updateNavOffset() {
+  const nav = document.querySelector('nav');
+  const main = document.querySelector('main');
+  if (nav && main) {
+    main.style.paddingTop = nav.offsetHeight + 'px';
+  }
+}
+updateNavOffset();
+window.addEventListener('resize', updateNavOffset);
+
 // Lightbox
 function initLightbox() {
   const lb = document.getElementById('lightbox');
