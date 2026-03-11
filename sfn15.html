@@ -1,370 +1,238 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SFN15 — Nat Atnafu</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="content/nafu_studios_logo.png" />
-    <link rel="canonical" href="https://natnafu.com/sfn15.html" />
-    <style>
-      .film-list {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-      }
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SFN15 — Nat Atnafu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="content/nafu_studios_logo.png" />
+  <link rel="canonical" href="https://natnafu.com/sfn15.html" />
+  <style>
+    .film-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .film-item {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 1.25rem;
+      align-items: center;
+      padding: 0.85rem 0;
+      border-bottom: 1px solid var(--light-gray);
+    }
+
+    .film-item:last-child {
+      border-bottom: none;
+    }
+
+    .film-thumb {
+      width: 140px;
+      height: 90px;
+      object-fit: contain;
+      background: #f0efe9;
+      display: block;
+    }
+
+    .film-info {}
+
+    .film-title {
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .film-title a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .film-director {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--gray);
+    }
+
+    .film-director a {
+      color: var(--gray);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    @media (max-width: 500px) {
       .film-item {
-        display: grid;
-        grid-template-columns: 140px 1fr;
-        gap: 1.25rem;
-        align-items: center;
-        padding: 0.85rem 0;
-        border-bottom: 1px solid var(--light-gray);
+        grid-template-columns: 90px 1fr;
       }
-      .film-item:last-child {
-        border-bottom: none;
-      }
+
       .film-thumb {
-        width: 140px;
-        height: 90px;
-        object-fit: contain;
-        background: #f0efe9;
-        display: block;
+        width: 90px;
+        height: 60px;
       }
-      .film-info {
-      }
-      .film-title {
-        font-family: var(--font-mono);
-        font-size: 0.9rem;
-        margin-bottom: 0.25rem;
-      }
-      .film-title a {
-        color: inherit;
-        text-decoration: underline;
-        text-underline-offset: 3px;
-      }
-      .film-director {
-        font-family: var(--font-mono);
-        font-size: 0.78rem;
-        color: var(--gray);
-      }
-      .film-director a {
-        color: var(--gray);
-        text-decoration: underline;
-        text-underline-offset: 3px;
-      }
-      @media (max-width: 500px) {
-        .film-item {
-          grid-template-columns: 90px 1fr;
-        }
-        .film-thumb {
-          width: 90px;
-          height: 60px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <nav>
-      <a href="index.html" class="nav-logo"><img src="content/nafu_studios_logo.png" class="nav-logo-img" alt="" /><span class="nav-logo-text">Nat Atnafu<span class="nav-logo-sub">Nafu Studios</span></span></a>
-      <ul class="nav-links">
-        <li><a href="index.html">Work</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
+    }
+  </style>
+</head>
 
-    <main>
-      <div class="project-page">
-        <a href="sfn.html" class="back-link">← SFN</a>
+<body>
+  <nav>
+    <a href="index.html" class="nav-logo"><img src="content/nafu_studios_logo.png" class="nav-logo-img" alt="" /><span
+        class="nav-logo-text">Nat Atnafu<span class="nav-logo-sub">Nafu Studios</span></span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
 
-        <div class="project-header">
-          <h1 class="project-title">SFN15: hope and absurdity</h1>
-          <div class="project-year">Curated by Nat and coco</div>
-        </div>
+  <main>
+    <div class="project-page">
+      <a href="sfn.html" class="back-link">← SFN</a>
 
-        <div
-          class="about-section"
-          style="margin-top: 0; padding-top: 0; border-top: none"
-        >
-          <div class="about-section-title">Act I</div>
-          <div class="film-list">
-            <div class="film-item">
-              <img
-                class="film-thumb"
-                src="content/sfn15/The-Lonely-Orbit-Team-Tumult-Short-film-10.jpg"
-                alt="The Lonely Orbit"
-                loading="lazy"
-              />
-              <div class="film-info">
-                <div class="film-title">
-                  <a
-                    href="https://vimeo.com/505567499"
-                    target="_blank"
-                    rel="noopener"
-                    >The Lonely Orbit</a
-                  >
-                </div>
-                <div class="film-director">
-                  <a
-                    href="https://www.teamtumult.ch/animation"
-                    target="_blank"
-                    rel="noopener"
-                    >Frederic Siegel and Benjamin Morard</a
-                  >
-                </div>
+      <div class="project-header">
+        <h1 class="project-title">SFN15: hope and absurdity</h1>
+        <div class="project-year">Curated by Nat and coco</div>
+      </div>
+
+      <div class="about-section" style="margin-top: 0; padding-top: 0; border-top: none">
+        <div class="about-section-title">Act I</div>
+        <div class="film-list">
+          <div class="film-item">
+            <img class="film-thumb" src="content/sfn15/The-Lonely-Orbit-Team-Tumult-Short-film-10.jpg"
+              alt="The Lonely Orbit" loading="lazy" />
+            <div class="film-info">
+              <div class="film-title">
+                <a href="https://vimeo.com/505567499" target="_blank" rel="noopener">The Lonely Orbit</a>
               </div>
-            </div>
-            <div class="film-item">
-              <img
-                class="film-thumb"
-                src="content/sfn15/frog+samurai.jpg"
-                alt="Samurai Frog Golf"
-                loading="lazy"
-              />
-              <div class="film-info">
-                <div class="film-title">
-                  <a
-                    href="https://www.shortverse.com/films/samurai-frog-golf"
-                    target="_blank"
-                    rel="noopener"
-                    >Samurai Frog Golf</a
-                  >
-                </div>
-                <div class="film-director">
-                  <a
-                    href="https://www.youtube.com/c/forrestschlageanimation"
-                    target="_blank"
-                    rel="noopener"
-                    >Brent Forrest</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="film-item">
-              <img
-                class="film-thumb"
-                src="content/sfn15/well+wishes.jpg"
-                alt="Well Wishes My Love, Your Love"
-                loading="lazy"
-              />
-              <div class="film-info">
-                <div class="film-title">
-                  <a
-                    href="https://vimeo.com/854297006"
-                    target="_blank"
-                    rel="noopener"
-                    >Well Wishes My Love, Your Love</a
-                  >
-                </div>
-                <div class="film-director">
-                  <a
-                    href="https://www.gabrielgabrielgarble.com/"
-                    target="_blank"
-                    rel="noopener"
-                    >Gabriel Gabriel Garble</a
-                  >
-                </div>
+              <div class="film-director">
+                <a href="https://www.teamtumult.ch/animation" target="_blank" rel="noopener">Frederic Siegel and
+                  Benjamin Morard</a>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="about-section">
-          <div class="about-section-title">Act II</div>
-          <div class="film-list">
-            <div class="film-item">
-              <img
-                class="film-thumb"
-                src="content/sfn15/the+dip.jpg"
-                alt="The Dip"
-                loading="lazy"
-              />
-              <div class="film-info">
-                <div class="film-title">
-                  <a
-                    href="https://vimeo.com/407934467"
-                    target="_blank"
-                    rel="noopener"
-                    >The Dip</a
-                  >
-                </div>
-                <div class="film-director">
-                  <a
-                    href="https://www.simonaxme.com/"
-                    target="_blank"
-                    rel="noopener"
-                    >Simona Mehandzhieva</a
-                  >
-                </div>
+          <div class="film-item">
+            <img class="film-thumb" src="content/sfn15/frog+samurai.jpg" alt="Samurai Frog Golf" loading="lazy" />
+            <div class="film-info">
+              <div class="film-title">
+                <a href="https://www.shortverse.com/films/samurai-frog-golf" target="_blank" rel="noopener">Samurai Frog
+                  Golf</a>
               </div>
-            </div>
-            <div class="film-item">
-              <img
-                class="film-thumb"
-                src="content/sfn15/ivans+need.jpg"
-                alt="Ivan's Need"
-                loading="lazy"
-              />
-              <div class="film-info">
-                <div class="film-title">
-                  <a
-                    href="https://vimeo.com/229856130"
-                    target="_blank"
-                    rel="noopener"
-                    >Ivan's Need</a
-                  >
-                </div>
-                <div class="film-director">
-                  <a
-                    href="https://eisprung-studio.ch/"
-                    target="_blank"
-                    rel="noopener"
-                    >Veronica L. Montaño</a
-                  >,
-                  <a
-                    href="https://manuelaleuenberger.ch/"
-                    target="_blank"
-                    rel="noopener"
-                    >Manuela Leuenberger</a
-                  >,
-                  <a
-                    href="https://lukassuter.com/index.html"
-                    target="_blank"
-                    rel="noopener"
-                    >Lukas Suter</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="film-item">
-              <img
-                class="film-thumb"
-                src="content/sfn15/slug+life.jpeg"
-                alt="Slug Life"
-                loading="lazy"
-              />
-              <div class="film-info">
-                <div class="film-title">
-                  <a
-                    href="https://vimeo.com/417549021"
-                    target="_blank"
-                    rel="noopener"
-                    >Slug Life</a
-                  >
-                </div>
-                <div class="film-director">
-                  <a
-                    href="https://sophiekoko.com/"
-                    target="_blank"
-                    rel="noopener"
-                    >Sophie Koko Gate</a
-                  >
-                </div>
+              <div class="film-director">
+                <a href="https://www.youtube.com/c/forrestschlageanimation" target="_blank" rel="noopener">Brent
+                  Forrest</a>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="about-section">
-          <div class="about-section-title">Act III</div>
-          <div class="film-list">
-            <div class="film-item">
-              <img
-                class="film-thumb"
-                src="content/sfn15/the+bald+future.jpg"
-                alt="Le Futur Sera Chauve"
-                loading="lazy"
-              />
-              <div class="film-info">
-                <div class="film-title">
-                  <a
-                    href="https://vimeo.com/257716930"
-                    target="_blank"
-                    rel="noopener"
-                    >Le Futur Sera Chauve / The Bald Future</a
-                  >
-                </div>
-                <div class="film-director">
-                  <a
-                    href="https://cargocollective.com/paulcabon"
-                    target="_blank"
-                    rel="noopener"
-                    >Paul Cabon</a
-                  >
-                </div>
+          <div class="film-item">
+            <img class="film-thumb" src="content/sfn15/well+wishes.jpg" alt="Well Wishes My Love, Your Love"
+              loading="lazy" />
+            <div class="film-info">
+              <div class="film-title">
+                <a href="https://vimeo.com/854297006" target="_blank" rel="noopener">Well Wishes My Love, Your Love</a>
               </div>
-            </div>
-            <div class="film-item">
-              <img
-                class="film-thumb"
-                src="content/sfn15/the+reinvention+of+normal.jpg"
-                alt="The Reinvention of Normal"
-                loading="lazy"
-              />
-              <div class="film-info">
-                <div class="film-title">
-                  <a
-                    href="https://vimeo.com/122959827"
-                    target="_blank"
-                    rel="noopener"
-                    >The Reinvention of Normal</a
-                  >
-                </div>
-                <div class="film-director">
-                  <a
-                    href="http://www.liamsaintpierre.com/"
-                    target="_blank"
-                    rel="noopener"
-                    >Liam Saint-Pierre</a
-                  >
-                  (about
-                  <a
-                    href="https://dominicwilcox.com/"
-                    target="_blank"
-                    rel="noopener"
-                    >Dominic Wilcox</a
-                  >)
-                </div>
-              </div>
-            </div>
-            <div class="film-item">
-              <img
-                class="film-thumb"
-                src="content/sfn15/Heroic-Dose.jpg"
-                alt="Heroic Dose"
-                loading="lazy"
-              />
-              <div class="film-info">
-                <div class="film-title">
-                  <a
-                    href="https://vimeo.com/1079554409"
-                    target="_blank"
-                    rel="noopener"
-                    >Heroic Dose</a
-                  >
-                </div>
-                <div class="film-director">
-                  <a
-                    href="https://dugangundelfinger.com/"
-                    target="_blank"
-                    rel="noopener"
-                    >DUGAN GUNDELFINGER</a
-                  >
-                </div>
+              <div class="film-director">
+                <a href="https://www.gabrielgabrielgarble.com/" target="_blank" rel="noopener">Gabriel Gabriel
+                  Garble</a>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="project-nav">
-          <a href="sfn14.html">← SFN14</a>
-          <a href="sfn.html">All SFN →</a>
         </div>
       </div>
-    </main>
 
-    <script src="main.js"></script>
-  </body>
+      <div class="about-section">
+        <div class="about-section-title">Act II</div>
+        <div class="film-list">
+          <div class="film-item">
+            <img class="film-thumb" src="content/sfn15/the+dip.jpg" alt="The Dip" loading="lazy" />
+            <div class="film-info">
+              <div class="film-title">
+                <a href="https://vimeo.com/407934467" target="_blank" rel="noopener">The Dip</a>
+              </div>
+              <div class="film-director">
+                <a href="https://www.simonaxme.com/" target="_blank" rel="noopener">Simona Mehandzhieva</a>
+              </div>
+            </div>
+          </div>
+          <div class="film-item">
+            <img class="film-thumb" src="content/sfn15/ivans+need.jpg" alt="Ivan's Need" loading="lazy" />
+            <div class="film-info">
+              <div class="film-title">
+                <a href="https://vimeo.com/229856130" target="_blank" rel="noopener">Ivan's Need</a>
+              </div>
+              <div class="film-director">
+                <a href="https://eisprung-studio.ch/" target="_blank" rel="noopener">Veronica L. Montaño</a>,
+                <a href="https://manuelaleuenberger.ch/" target="_blank" rel="noopener">Manuela Leuenberger</a>,
+                <a href="https://lukassuter.com/index.html" target="_blank" rel="noopener">Lukas Suter</a>
+              </div>
+            </div>
+          </div>
+          <div class="film-item">
+            <img class="film-thumb" src="content/sfn15/slug+life.jpeg" alt="Slug Life" loading="lazy" />
+            <div class="film-info">
+              <div class="film-title">
+                <a href="https://vimeo.com/417549021" target="_blank" rel="noopener">Slug Life</a>
+              </div>
+              <div class="film-director">
+                <a href="https://sophiekoko.com/" target="_blank" rel="noopener">Sophie Koko Gate</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-section">
+        <div class="about-section-title">Act III</div>
+        <div class="film-list">
+          <div class="film-item">
+            <img class="film-thumb" src="content/sfn15/the+bald+future.jpg" alt="Le Futur Sera Chauve" loading="lazy" />
+            <div class="film-info">
+              <div class="film-title">
+                <a href="https://vimeo.com/257716930" target="_blank" rel="noopener">Le Futur Sera Chauve / The Bald
+                  Future</a>
+              </div>
+              <div class="film-director">
+                <a href="https://cargocollective.com/paulcabon" target="_blank" rel="noopener">Paul Cabon</a>
+              </div>
+            </div>
+          </div>
+          <div class="film-item">
+            <img class="film-thumb" src="content/sfn15/the+reinvention+of+normal.jpg" alt="The Reinvention of Normal"
+              loading="lazy" />
+            <div class="film-info">
+              <div class="film-title">
+                <a href="https://vimeo.com/122959827" target="_blank" rel="noopener">The Reinvention of Normal</a>
+              </div>
+              <div class="film-director">
+                <a href="http://www.liamsaintpierre.com/" target="_blank" rel="noopener">Liam Saint-Pierre</a>
+                (about
+                <a href="https://dominicwilcox.com/" target="_blank" rel="noopener">Dominic Wilcox</a>)
+              </div>
+            </div>
+          </div>
+          <div class="film-item">
+            <img class="film-thumb" src="content/sfn15/Heroic-Dose.jpg" alt="Heroic Dose" loading="lazy" />
+            <div class="film-info">
+              <div class="film-title">
+                <a href="https://vimeo.com/1079554409" target="_blank" rel="noopener">Heroic Dose</a>
+              </div>
+              <div class="film-director">
+                <a href="https://dugangundelfinger.com/" target="_blank" rel="noopener">DUGAN GUNDELFINGER</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-nav">
+        <a href="sfn14.html">← SFN14</a>
+        <a href="sfn.html">All SFN →</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+
 </html>

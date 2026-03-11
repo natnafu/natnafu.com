@@ -1,82 +1,91 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SFN — Nat Atnafu</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="content/nafu_studios_logo.png" />
-    <link rel="canonical" href="https://natnafu.com/sfn.html" />
-    <style>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SFN — Nat Atnafu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="content/nafu_studios_logo.png" />
+  <link rel="canonical" href="https://natnafu.com/sfn.html" />
+  <style>
+    .sfn-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .sfn-card {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .sfn-card img {
+      width: 100%;
+      aspect-ratio: 1/1;
+      object-fit: contain;
+      background: #f0efe9;
+      display: block;
+      transition: opacity 0.2s;
+    }
+
+    .sfn-card:hover img {
+      opacity: 0.85;
+    }
+
+    .sfn-card-title {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      margin-top: 0.5rem;
+    }
+
+    @media (max-width: 640px) {
       .sfn-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
-        margin-top: 2rem;
+        grid-template-columns: 1fr;
       }
-      .sfn-card {
-        text-decoration: none;
-        color: inherit;
-        display: block;
-      }
-      .sfn-card img {
-        width: 100%;
-        aspect-ratio: 1/1;
-        object-fit: contain;
-        background: #f0efe9;
-        display: block;
-        transition: opacity 0.2s;
-      }
-      .sfn-card:hover img {
-        opacity: 0.85;
-      }
-      .sfn-card-title {
-        font-family: var(--font-mono);
-        font-size: 0.85rem;
-        margin-top: 0.5rem;
-      }
-      @media (max-width: 640px) {
-        .sfn-grid {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <nav>
-      <a href="index.html" class="nav-logo"><img src="content/nafu_studios_logo.png" class="nav-logo-img" alt="" /><span class="nav-logo-text">Nat Atnafu<span class="nav-logo-sub">Nafu Studios</span></span></a>
-      <ul class="nav-links">
-        <li><a href="index.html">Work</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
+    }
+  </style>
+</head>
 
-    <main>
-      <div class="project-page">
-        <div class="project-header">
-          <h1 class="project-title">SFN</h1>
-          <div class="project-year">Curated Short Film Nights</div>
-        </div>
+<body>
+  <nav>
+    <a href="index.html" class="nav-logo"><img src="content/nafu_studios_logo.png" class="nav-logo-img" alt="" /><span
+        class="nav-logo-text">Nat Atnafu<span class="nav-logo-sub">Nafu Studios</span></span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
 
-        <div class="sfn-grid">
-          <a href="sfn15.html" class="sfn-card">
-            <img src="content/sfn/SFN15.png" alt="SFN15" loading="lazy" />
-            <div class="sfn-card-title">SFN15 — hope and absurdity</div>
-          </a>
-          <a href="sfn14.html" class="sfn-card">
-            <img src="content/sfn/sfn14.png" alt="SFN14" loading="lazy" />
-            <div class="sfn-card-title">SFN14 — Formats</div>
-          </a>
-          <a href="sfn1-13.html" class="sfn-card">
-            <img src="content/sfn/sfn_1-13.png" alt="SFN1–13" loading="lazy" />
-            <div class="sfn-card-title">SFN1 through SFN13 — Archive</div>
-          </a>
-        </div>
+  <main>
+    <div class="project-page">
+      <div class="project-header">
+        <h1 class="project-title">SFN</h1>
+        <div class="project-year">Curated Short Film Nights</div>
       </div>
-    </main>
 
-    <script src="main.js"></script>
-  </body>
+      <div class="sfn-grid">
+        <a href="sfn15.html" class="sfn-card">
+          <img src="content/sfn/SFN15.png" alt="SFN15" loading="lazy" />
+          <div class="sfn-card-title">SFN15 — hope and absurdity</div>
+        </a>
+        <a href="sfn14.html" class="sfn-card">
+          <img src="content/sfn/sfn14.png" alt="SFN14" loading="lazy" />
+          <div class="sfn-card-title">SFN14 — Formats</div>
+        </a>
+        <a href="sfn1-13.html" class="sfn-card">
+          <img src="content/sfn/sfn_1-13.png" alt="SFN1–13" loading="lazy" />
+          <div class="sfn-card-title">SFN1 through SFN13 — Archive</div>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+
 </html>
